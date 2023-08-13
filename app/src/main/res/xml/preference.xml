@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:layout="@layout/preferences_category"
+        android:title="TCP Settings">
+
+        <EditTextPreference
+            android:key="tcp_port"
+            android:summary="Specify the port for TCP connection"
+            android:title="TCP Port" />
+        <SwitchPreference
+            android:key="authentication"
+            android:summary="Specify the authentication method"
+            android:title="Authentication for TCP"/>
+        <EditTextPreference
+            android:key="id"
+            android:dependency="authentication"
+            android:summary="ID for authentication"
+            android:title="ID" />
+        <EditTextPreference
+            android:dependency="authentication"
+            android:key="pass"
+            android:summary="Password for authentication"
+            android:title="Password" />
+        <SwitchPreference
+            android:key="encrypted_frames"
+            android:title="Encrypted Frames"
+            android:summary="Enable/disable frame encryption" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Camera Settings"
+        android:layout="@layout/preferences_category">
+
+        <SwitchPreference
+            android:key="auto_exposure"
+            android:title="Auto Exposure"
+            android:summary="Enable/disable auto exposure" />
+        <SwitchPreference
+            android:key="hdr"
+            android:title="HDR Picture"
+            android:summary="Enable/disable HDR pictures and video" />
+        <SwitchPreference
+            android:key="zoom"
+            android:title="Zoom"
+            android:summary="Enable/disable zooming" />
+
+        <SwitchPreference
+            android:key="focus_auto_focus"
+            android:title="Auto Focus"
+            android:summary="Enable/disable auto focus" />
+
+        <ListPreference
+            android:key="whitebalance"
+            android:title="White Balance"
+            android:summary="Select white balance" />
+
+        <SwitchPreference
+            android:key="auto_dim"
+            android:title="Auto Dim"
+            android:summary="Enable/disable auto dimming" />
+
+        <SeekBarPreference
+            android:key="time"
+            android:title="Time"
+            android:summary="Dim after seconds"
+            android:dependency="auto_dim"
+            android:min="5"
+            android:max="120"/>
+
+        <EditTextPreference
+            android:key="background"
+            android:title="Background"
+            android:summary="Specify the background color or image" />
+
+<!--        <EditTextPreference-->
+<!--            android:key="power_management"-->
+<!--            android:title="Power Management"-->
+<!--            android:summary="Specify the power management settings" />-->
+
+        <ListPreference
+            android:key="antibanding"
+            android:title="Anti Banding"
+            android:summary="Choose the anti-banding mode">
+
+        </ListPreference>
+
+        <ListPreference
+            android:key="coloreffect"
+            android:title="Color Effect"
+            android:summary="Choose the color effect">
+
+        </ListPreference>
+
+        <ListPreference
+            android:key="scenemode"
+            android:title="Scene Mode"
+            android:summary="Choose the scene mode">
+
+        </ListPreference>
+        <SeekBarPreference
+            android:key="fps"
+            android:title="Frames Per Second"
+            android:summary="Adjust the fps using the slider"
+            android:max="30"
+            android:min="1"
+            android:defaultValue="30">
+
+        </SeekBarPreference>
+
+        <ListPreference
+            android:key="cameradevice"
+            android:summary="Choose the camera device"
+            android:title="Camera Device">
+        </ListPreference>
+
+        <ListPreference
+            android:key="resolution"
+            android:summary="Choose the camera resolution"
+            android:title="Resolution">
+
+        </ListPreference>
+
+        <SwitchPreference
+            android:key="flash"
+            android:summary="Enable/disable default flash"
+            android:title="Flash" />
+        <SwitchPreference
+            android:dependency="flash"
+            android:key="autoflash"
+            android:summary="Enable/disable Auto flash"
+            android:title="Flash" />
+
+        <EditTextPreference
+            android:key="mode"
+            android:summary="Choose the color mode"
+            android:title="RGB/YBR Mode">
+
+        </EditTextPreference>
+        <SeekBarPreference
+            android:key="jpeg_quality"
+            android:title="JPEG Quality"
+            android:summary="Adjust the value using the slider"
+            android:max="100"
+            android:min="1"
+            android:defaultValue="70" />
+        <SwitchPreference
+            android:key="date_time_overlay"
+            android:summary="Enable/disable date/time overlay"
+            android:title="Add Date/Time Overlay" />
+        <!-- Add more preferences related to other settings here -->
+
+
+
+        <!-- Add more preferences related to advanced settings here -->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Camera Picture Settings"
+        android:layout="@layout/preferences_category">
+        <SwitchPreference
+            android:key="raw"
+            android:title="Raw Pictures"
+            android:summary="Enable/disable RAW pictures saving" />
+        <EditTextPreference
+            android:key="camera_picture_location"
+            android:title="Camera Picture Location"
+            android:summary="Specify the location to save camera pictures" />
+
+        <EditTextPreference
+            android:key="camera_picture_encoder"
+            android:title="Camera Picture Encoder"
+            android:summary="Choose the encoder for camera pictures">
+
+        </EditTextPreference>
+
+        <!-- Add more preferences related to camera picture settings here -->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Video Recorder Settings"
+        android:layout="@layout/preferences_category">
+
+        <EditTextPreference
+            android:key="video_recorder_location"
+            android:title="Video Recorder Location"
+            android:summary="Specify the location to save recorded videos" />
+
+        <EditTextPreference
+            android:key="video_recorder_resolution"
+            android:title="Video Recorder Resolution"
+            android:summary="Choose the resolution for recorded videos">
+
+        </EditTextPreference>
+
+        <EditTextPreference
+            android:key="video_recorder_encoder"
+            android:title="Video Recorder Encoder"
+            android:summary="Choose the encoder for recorded videos">
+
+        </EditTextPreference>
+
+        <!-- Add more preferences related to video recorder settings here -->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Display Settings"
+        android:layout="@layout/preferences_category">
+
+        <SwitchPreference
+            android:key="full_screen"
+            android:title="Full Screen"
+            android:summary="Enable/disable full screen mode" />
+
+        <!-- Add more preferences related to display settings here -->
+
+    </PreferenceCategory>
+    <PreferenceCategory
+    android:title="Advanced Settings"
+    android:layout="@layout/preferences_category">
+
+    <Preference
+        android:key="reset_settings"
+        android:title="Reset Settings"
+        android:summary="Reset all settings to default values" />
+
+    <Preference
+        android:key="enable_advanced_settings"
+        android:title="Enable Advanced Settings"
+        android:summary="Toggle display of advanced settings"/>
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

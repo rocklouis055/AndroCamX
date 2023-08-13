@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Help"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Connection Methods -->
+            <TextView
+                android:id="@+id/connectionMethodsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Connection Methods"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- SCAN Button -->
+            <TextView
+                android:id="@+id/scanDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="SCAN: Automatically connects to the PC by scanning for available devices on the same network. Once connected, it will land on the Connection Establishment page."
+                android:textSize="16sp" />
+
+            <!-- QR CONNECT Button -->
+            <TextView
+                android:id="@+id/qrConnectDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="QR CONNECT: Displays a QR code on the PC screen that can be scanned to establish a connection. Once the QR code is scanned, it will connect to the PC and navigate to the Connection Establishment page."
+                android:textSize="16sp" />
+
+            <!-- MANUAL CONNECT Button -->
+            <TextView
+                android:id="@+id/manualConnectDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="MANUAL CONNECT: Manually enter the IP address and port number of the PC to establish a connection. Once the details are entered, it will try to connect to the PC and navigate to the Connection Establishment page."
+                android:textSize="16sp" />
+
+            <!-- USB CONNECT Button -->
+            <TextView
+                android:id="@+id/usbConnectDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="USB CONNECT: Connect to the PC using a USB cable. This functionality is under development and will be available in future updates."
+                android:textSize="16sp" />
+
+            <!-- OVER INTERNET Button -->
+            <TextView
+                android:id="@+id/overInternetDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="OVER INTERNET: Connect to the PC over the internet. This functionality is under development and will be available in future updates."
+                android:textSize="16sp" />
+
+            <!-- Connection Establishment Page -->
+            <TextView
+                android:id="@+id/connectionEstablishmentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Connection Establishment Page"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/connectionEstablishmentDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="On the Connection Establishment page, you will see the PC information including name, user name, IP address, and port number. Additionally, you will have the option to select the desired resolution and JPEG quality for the camera. You can also choose the camera to use (front or back camera) for capturing images and videos."
+                android:textSize="16sp" />
+
+            <!-- Camera Functionality -->
+            <TextView
+                android:id="@+id/cameraFunctionalityTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Camera Functionality"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Camera Selection -->
+            <TextView
+                android:id="@+id/cameraSelectionDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Camera Selection: The app allows you to switch between the front and back camera of your mobile device. You can tap on the camera switch icon in the top upper side of the screen to change the camera."
+                android:textSize="16sp" />
+
+            <!-- Raw Picture -->
+            <TextView
+                android:id="@+id/rawPictureDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Raw Picture: Enable this option to capture raw images using the camera. Raw images are unprocessed and offer higher quality and more flexibility for post-processing."
+                android:textSize="16sp" />
+
+            <!-- Video Recording -->
+            <TextView
+                android:id="@+id/videoRecordingDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Video Recording: Tap on this button to start recording videos using the camera. You can tap again to stop the recording."
+                android:textSize="16sp" />
+
+            <!-- Picture Capture -->
+            <TextView
+                android:id="@+id/pictureCaptureDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Picture Capture: Tap on this button to capture still images using the camera."
+                android:textSize="16sp" />
+
+            <!-- Flash On/Off -->
+            <TextView
+                android:id="@+id/flashOnOffDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Flash On/Off: This functionality allows you to toggle the flash on or off for capturing images in low light conditions. Tap on the flash icon to enable or disable the flash."
+                android:textSize="16sp" />
+
+            <!-- White Balance -->
+            <TextView
+                android:id="@+id/whiteBalanceDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="White Balance: Adjust the white balance settings of the camera to capture images with accurate color representation. Tap on the white balance icon to access and modify the white balance settings."
+                android:textSize="16sp" />
+
+            <!-- More/Less Option -->
+            <TextView
+                android:id="@+id/moreLessOptionDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="More/Less Option: Tap on this button to expand or collapse additional camera settings and options, including exposure, ISO, focus, and more."
+                android:textSize="16sp" />
+
+            <!-- Navigation Menu -->
+            <TextView
+                android:id="@+id/navigationMenuTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Navigation Menu"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Home -->
+            <TextView
+                android:id="@+id/homeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Home: Tap on the Home option in the navigation menu to go back to the main screen of the app."
+                android:textSize="16sp" />
+
+            <!-- Settings -->
+            <TextView
+                android:id="@+id/settingsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Settings: Access the Settings page to customize various app preferences and configurations."
+                android:textSize="16sp" />
+
+            <!-- Help -->
+            <TextView
+                android:id="@+id/helpDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Help: This page provides detailed information about the app's functionalities and how to use them effectively."
+                android:textSize="16sp" />
+
+            <!-- About -->
+            <TextView
+                android:id="@+id/aboutDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="About: View information about the app, such as version, developer details, and other relevant details."
+                android:textSize="16sp" />
+
+            <!-- Contact Us -->
+            <TextView
+                android:id="@+id/contactUsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Contact Us: Connect with the app developer for any queries, feedback, or support-related issues."
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".About">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="365dp"
+                android:layout_height="136dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="8dp"
+                android:text="\nWelcome to AndroCamX!\n"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="8dp"
+                android:text="We are a team of talented and dedicated 6th semester Computer Science and Engineering (CSE) students who have developed AndroCamX as part of our mini project. AndroCamX is an innovative mobile application designed to transform your mobile camera into a high-quality webcam for your PC, providing superior resolution and enhanced features.\n\nWith AndroCamX, we aim to revolutionize the way you communicate and connect through video conferencing, live streaming, and online meetings. Our app allows you to leverage the power of your mobile camera to deliver a professional-grade video experience.\n\nAndroCamX offers a range of advanced features that surpass the capabilities of default PC webcams. You can enjoy higher resolution video feeds, improved image quality, and enhanced low-light performance. Our app also provides FPS (Frames Per Second) control, allowing you to adjust the video output according to your requirements.\n\nWe have integrated a machine learning model into AndroCamX, enabling exciting functionalities like object detection and recognition. This feature opens up a world of possibilities for video content creators, educators, and professionals who can utilize real-time object detection in their presentations, tutorials, and demonstrations.\n\nThroughout the development process, we have utilized cutting-edge technologies and implemented efficient algorithms to ensure seamless video streaming and optimal performance. We have prioritized usability, allowing you to easily connect your mobile camera to your PC using a simple and intuitive user interface.\n\nAs CSE students, we have received comprehensive training in software development, computer vision, and machine learning. This knowledge has enabled us to develop AndroCamX's advanced functionalities and optimize its performance. We have also conducted rigorous testing to ensure that AndroCamX meets the highest quality standards.\n\nBy developing AndroCamX, we have not only expanded our programming skills but also demonstrated our ability to address real-world challenges. Our teamwork, effective communication, and efficient project management have been instrumental in the successful completion of this mini project.\n\nWe are proud to present AndroCamX to you and invite you to experience its capabilities firsthand. We believe that AndroCamX will elevate your video communication and empower you with enhanced visual tools. We welcome your feedback and suggestions as we continue to refine and improve AndroCamX.\n\nThank you for joining us on this journey!\n\n"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="12dp"
+                android:text="Team [Kinetic Knights]\n6th Semester, Computer Science and Engineering (CSE)"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

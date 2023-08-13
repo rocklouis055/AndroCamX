@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "39412544194",
+    "project_id": "androcamx-59bde",
+    "storage_bucket": "androcamx-59bde.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39412544194:android:accaf238b246ef7493c15b",
+        "android_client_info": {
+          "package_name": "com.louise.androcamx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39412544194-ojba6r60hjbink6hmhq7fenc6temjilv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhV6YR29S3j9I3gN9XYSmG1-3Lyxok_Ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39412544194-ojba6r60hjbink6hmhq7fenc6temjilv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
